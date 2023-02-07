@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="author" content="John Cotterell">
+  		<title>Demo</title>
+	</head>
+  </head>
+  <body>
+    <div id="container">
+
+    </div>
+
+  </body>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("bugballb.swf");
+    });
+</script>
+<script src="/ruffle/ruffle.js"></script>
+</html>
